@@ -1,0 +1,136 @@
+/* 🌍 AfroShop Main Stylesheet */
+
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+header {
+  background-color: #ffcc00;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.category-grid, .product-grid {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-card, .product-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.category-card img, .product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 600px) {
+  .category-grid, .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 🔍 Product Filter Styles */
+#productFilter {
+  padding: 1rem;
+  background-color: #fff8e1;
+  border-bottom: 1px solid #ddd;
+}
+
+#productFilter h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.filter-controls input,
+.filter-controls select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+/* 📱 Responsive Filters */
+@media (max-width: 600px) {
+  .filter-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-controls input,
+  .filter-controls select {
+    width: 90%;
+  }
+}
+/* 🔍 Product Filter Styles */
+#productFilter {
+  padding: 1rem;
+  background-color: #fff8e1;
+  border-bottom: 1px solid #ddd;
+}
+
+#productFilter h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.filter-controls input,
+.filter-controls select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+/* 📱 Responsive Filters */
+@media (max-width: 600px) {
+  .filter-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-controls input,
+  .filter-controls select {
+    width: 90%;
+  }
+}

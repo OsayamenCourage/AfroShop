@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - AfroShop</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>AfroShop</h1>
+  </header>
+
+  <section>
+    <h2>Checkout</h2>
+    <form action="/checkout" method="POST">
+      <label>Full Name:</label><br />
+      <input type="text" name="name" required placeholder="Enter your full name" title="Full Name" /><br />
+      <label>Shipping Address:</label><br />
+      <textarea name="address" required title="Shipping Address" placeholder="Enter your shipping address"></textarea><br />
+      <label>Card Number:</label><br />
+      <input type="text" name="card" required title="Card Number" placeholder="Enter your card number" /><br />
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+</body>
+</html>

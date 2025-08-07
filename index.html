@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AfroShop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🧭 Navigation Bar -->
+  <header>
+    <h1>AfroShop</h1>
+    <nav>
+      <a href="pages/login.html">Login</a>
+      <a href="pages/register.html">Create Account</a>
+      <a href="pages/cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <!-- 🛍️ Product Categories -->
+  <section id="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="assets/images/Drinks and Bevrages.jpg" alt="Assorted colorful African drinks and beverages displayed on a wooden table in a bright and welcoming shop environment" />
+        <p>Drinks and Beverages</p>
+      </div>
+      <div class="category-card">
+        <img src="assets/images/Meats and Seafood.jpg" alt="Meats and Seafood" />
+        <p>Meats and Seafood</p>
+      </div>
+      <div class="category-card">
+        <img src="assets/images/Pasta-Rice-and-Noodles.jpg" alt="Pasta, Rice, and Noodles" />
+        <p>Pasta, Rice, and Noodles</p>
+      </div>
+      <div class="category-card">
+        <img src="assets/images/snacks.jpeg" alt="Snacks" />
+        <p>Snacks</p>
+      </div>
+      <div class="category-card">
+        <img src="assets/images/Fruits-and-Vegetables.jpg" alt="Fruits and Vegetables" />
+        <p>Fruits and Vegetables</p>
+    </div>
+
+
+    <!-- 🔍 Product Filter Section -->
+<section id="productFilter">
+  <h2>Find Your Product</h2>
+  <div class="filter-controls">
+    <input type="text" id="searchInput" placeholder="Search products..." />
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter" title="Select product category">
+      <option value="">All Categories</option>
+      <option value="Drinks and Beverages">Drinks and Beverages</option>
+      <option value="Meats and Seafood">Meats and Seafood</option>
+      <option value="Rice Pasta and Noodles">Rice Pasta and Noodles</option>
+      <option value="Snacks">Snacks</option>
+      <option value="Fruits and Vegetables">Fruits and Vegetables</option>
+    </select>
+    <label for="priceFilter">Price:</label>
+    <select id="priceFilter" title="Select price range">
+      <option value="">All Prices</option>
+      <option value="low">Under €20</option>
+      <option value="high">€20 and above</option>
+    </select>
+  </div>
+</section>
+
+  </section>
+  
+
+  <!-- 🛒 Featured Products -->
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- Products will be loaded here by script.js -->
+    </div>
+    <div class="product-grid" id="productContainer"></div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
